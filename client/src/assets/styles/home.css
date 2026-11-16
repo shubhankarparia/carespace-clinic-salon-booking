@@ -1,0 +1,1321 @@
+
+/* ==========================================
+   CARESPACE - PREMIUM HOMEPAGE
+   Responsive: Desktop / Tablet / Mobile
+========================================== */
+
+.home-page {
+  --home-primary: #2563eb;
+  --home-primary-dark: #1d4ed8;
+  --home-heading: #172554;
+  --home-muted: #64748b;
+  --home-border: #e8edf5;
+  color: var(--home-heading);
+  background: #fff;
+  overflow: hidden;
+}
+
+.home-page a {
+  text-decoration: none;
+}
+
+/* ==========================================
+   1. HERO SECTION
+========================================== */
+
+.home-hero {
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 85px 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(59, 130, 246, 0.12), transparent 28%),
+    radial-gradient(circle at 5% 90%, rgba(14, 165, 233, 0.08), transparent 25%),
+    linear-gradient(135deg, #f8fbff, #eff6ff 55%, #f8fbff);
+}
+
+.home-hero-shape {
+  position: absolute;
+  border: 1px solid rgba(37, 99, 235, 0.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.home-shape-one {
+  width: 520px;
+  height: 520px;
+  top: -260px;
+  right: -100px;
+}
+
+.home-shape-two {
+  width: 350px;
+  height: 350px;
+  bottom: -220px;
+  left: -120px;
+}
+
+.home-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.home-hero-content {
+  max-width: 570px;
+}
+
+.home-eyebrow,
+.home-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.home-eyebrow {
+  padding: 11px 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.home-eyebrow i {
+  font-size: 15px;
+}
+
+.home-hero h1 {
+  margin: 27px 0 22px;
+  color: #172554;
+  font-size: clamp(50px, 6vw, 76px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -3.5px;
+}
+
+.home-hero h1 span {
+  color: #2563eb;
+}
+
+.home-hero-description {
+  max-width: 510px;
+  margin-bottom: 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Hero Buttons */
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.home-btn-primary,
+.home-btn-outline {
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 23px;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 750;
+  transition: all 0.3s ease;
+}
+
+.home-btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 9px 22px rgba(37, 99, 235, 0.2);
+}
+
+.home-btn-primary:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.28);
+}
+
+.home-btn-outline {
+  color: #1e3a8a;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+}
+
+.home-btn-outline:hover {
+  color: #fff;
+  border-color: #2563eb;
+  background: #2563eb;
+  transform: translateY(-3px);
+}
+
+/* Hero Statistics */
+
+.home-hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 43px;
+}
+
+.home-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-stat strong {
+  color: #172554;
+  font-size: 25px;
+  font-weight: 850;
+}
+
+.home-stat span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.home-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: #dbe3ef;
+}
+
+/* ==========================================
+   2. HERO VISUAL
+========================================== */
+
+.home-hero-visual {
+  min-height: 490px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-visual-glow {
+  width: 390px;
+  height: 390px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.1);
+  filter: blur(40px);
+}
+
+.home-visual-main {
+  width: 370px;
+  min-height: 430px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 27px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(255,255,255,0.2), transparent 30%),
+    linear-gradient(145deg, #1e40af, #2563eb 55%, #0284c7);
+  box-shadow: 0 30px 65px rgba(30, 64, 175, 0.22);
+  transform: rotate(-3deg);
+  transition: transform 0.4s ease;
+}
+
+.home-visual-main:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+.home-visual-main::before,
+.home-visual-main::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+}
+
+.home-visual-main::before {
+  width: 300px;
+  height: 300px;
+  right: -140px;
+  bottom: -100px;
+}
+
+.home-visual-main::after {
+  width: 220px;
+  height: 220px;
+  right: -100px;
+  bottom: -60px;
+}
+
+.home-visual-top,
+.home-visual-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.home-visual-label {
+  color: #dbeafe;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.home-visual-sparkle {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 19px;
+}
+
+.home-visual-center {
+  position: relative;
+  z-index: 2;
+  padding-left: 7px;
+}
+
+.home-visual-icon {
+  width: 67px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 31px;
+}
+
+.home-visual-center > span {
+  color: #bfdbfe;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.home-visual-center h2 {
+  margin: 12px 0;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 850;
+  line-height: 1.16;
+  letter-spacing: -1px;
+}
+
+.home-visual-center p {
+  max-width: 250px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.home-visual-bottom {
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.home-visual-bottom span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #e0f2fe;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.home-visual-bottom i {
+  font-size: 14px;
+}
+
+/* Floating Cards */
+
+.home-floating-card {
+  min-width: 220px;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #eef2f7;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
+  animation: homeFloat 4s ease-in-out infinite;
+}
+
+.home-floating-booking {
+  top: 55px;
+  right: -5px;
+}
+
+.home-floating-care {
+  bottom: 48px;
+  left: -35px;
+  animation-delay: 1s;
+}
+
+.home-floating-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 19px;
+}
+
+.home-floating-icon.pink {
+  color: #db2777;
+  background: #fce7f3;
+}
+
+.home-floating-card div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-floating-card strong {
+  color: #172554;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.home-floating-card small {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.home-floating-check {
+  margin-left: auto;
+  color: #16a34a;
+  font-size: 17px;
+}
+
+.home-visual-decoration {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  z-index: 2;
+  color: rgba(37, 99, 235, 0.2);
+  font-size: 55px;
+}
+
+@keyframes homeFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+/* ==========================================
+   3. BENEFITS SECTION
+========================================== */
+
+.home-benefits-section {
+  padding: 30px 0;
+  border-bottom: 1px solid #edf1f7;
+  background: #fff;
+}
+
+.home-benefit-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 12px 10px;
+}
+
+.home-benefit-icon {
+  width: 53px;
+  height: 53px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: #2563eb;
+  background: #eff6ff;
+  font-size: 23px;
+}
+
+.home-benefit-item h3 {
+  margin-bottom: 5px;
+  color: #172554;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.home-benefit-item p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   4. COMMON SECTION HEADING
+========================================== */
+
+.home-section {
+  padding: 90px 0;
+}
+
+.home-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 38px;
+}
+
+.home-section-heading h2,
+.home-centered-heading h2 {
+  margin: 12px 0;
+  color: #172554;
+  font-size: clamp(29px, 4vw, 41px);
+  font-weight: 850;
+  letter-spacing: -1.5px;
+}
+
+.home-section-heading p,
+.home-centered-heading p {
+  max-width: 590px;
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.home-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 750;
+  transition: gap 0.3s ease;
+}
+
+.home-text-link:hover {
+  gap: 14px;
+  color: #1d4ed8;
+}
+
+/* ==========================================
+   5. CLINIC AND SALON CATEGORY CARDS
+========================================== */
+
+.home-categories {
+  background: #fff;
+}
+
+.home-category-card {
+  min-height: 365px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 38px;
+  border-radius: 23px;
+  isolation: isolate;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.1);
+}
+
+.home-clinic-card {
+  background: linear-gradient(125deg, #eff6ff, #dbeafe);
+}
+
+.home-salon-card {
+  background: linear-gradient(125deg, #fdf2f8, #fce7f3);
+}
+
+.home-category-content {
+  max-width: 310px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.home-salon-card .home-category-tag {
+  color: #be185d;
+}
+
+.home-category-content h3 {
+  margin-bottom: 14px;
+  color: #172554;
+  font-size: 35px;
+  font-weight: 850;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.home-category-content p {
+  margin-bottom: 22px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.home-category-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 17px;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 10px;
+  color: #1d4ed8;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 750;
+  transition: all 0.3s ease;
+}
+
+.home-category-btn:hover {
+  color: #fff;
+  border-color: #2563eb;
+  background: #2563eb;
+}
+
+.home-salon-card .home-category-btn {
+  color: #be185d;
+  border-color: rgba(190, 24, 93, 0.16);
+}
+
+.home-salon-card .home-category-btn:hover {
+  color: #fff;
+  border-color: #db2777;
+  background: #db2777;
+}
+
+/* Category Art */
+
+.home-category-art {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.home-category-art > i {
+  position: relative;
+  z-index: 2;
+  font-size: 85px;
+}
+
+.clinic-art {
+  color: rgba(37, 99, 235, 0.75);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.salon-art {
+  color: rgba(219, 39, 119, 0.7);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.art-circle {
+  position: absolute;
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  border-radius: 50%;
+}
+
+.art-circle-one {
+  width: 250px;
+  height: 250px;
+}
+
+.art-circle-two {
+  width: 310px;
+  height: 310px;
+}
+
+.salon-art .art-circle {
+  border-color: rgba(219, 39, 119, 0.14);
+}
+
+.home-category-number {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  color: rgba(23, 37, 84, 0.16);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+/* ==========================================
+   6. POPULAR SERVICES
+========================================== */
+
+.home-popular-section {
+  background: #f8fafc;
+}
+
+.home-service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  border: 1px solid #e8edf5;
+  border-radius: 19px;
+  background: #fff;
+  box-shadow: 0 7px 24px rgba(15, 23, 42, 0.035);
+  transition: all 0.3s ease;
+}
+
+.home-service-card:hover {
+  transform: translateY(-7px);
+  border-color: #bfdbfe;
+  box-shadow: 0 18px 38px rgba(37, 99, 235, 0.09);
+}
+
+.home-service-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.home-service-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #2563eb;
+  background: #eff6ff;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+.home-service-card:hover .home-service-icon {
+  color: #fff;
+  background: #2563eb;
+  transform: rotate(-5deg);
+}
+
+.home-service-badge {
+  padding: 7px 11px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.clinic-badge {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.salon-badge {
+  color: #be185d;
+  background: #fce7f3;
+}
+
+.home-service-card h3 {
+  margin-bottom: 12px;
+  color: #172554;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.home-service-card > p {
+  flex: 1;
+  margin-bottom: 23px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.home-service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 18px;
+  border-top: 1px solid #edf1f7;
+}
+
+.home-service-bottom > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-service-bottom small {
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.home-service-bottom strong {
+  color: #172554;
+  font-size: 19px;
+  font-weight: 850;
+}
+
+.home-service-bottom > a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #fff;
+  background: #2563eb;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.home-service-bottom > a:hover {
+  background: #1d4ed8;
+  transform: rotate(45deg);
+}
+
+.home-empty-services {
+  padding: 45px 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 18px;
+  text-align: center;
+  background: #fff;
+}
+
+.home-empty-services > i {
+  color: #2563eb;
+  font-size: 38px;
+}
+
+.home-empty-services h3 {
+  margin: 15px 0 8px;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.home-empty-services p {
+  color: #64748b;
+}
+
+/* ==========================================
+   7. HOW IT WORKS
+========================================== */
+
+.home-how-section {
+  background: #fff;
+}
+
+.home-centered-heading {
+  max-width: 690px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.home-centered-heading p {
+  margin: 0 auto;
+}
+
+.home-step-card {
+  height: 100%;
+  position: relative;
+  padding: 35px 28px;
+  border: 1px solid #e8edf5;
+  border-radius: 19px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.home-step-card:hover {
+  transform: translateY(-6px);
+  border-color: #bfdbfe;
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.08);
+}
+
+.home-step-number {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  color: #dbeafe;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.home-step-icon {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  border-radius: 17px;
+  color: #2563eb;
+  background: #eff6ff;
+  font-size: 25px;
+}
+
+.home-step-card h3 {
+  margin-bottom: 12px;
+  color: #172554;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.home-step-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   8. FINAL CTA
+========================================== */
+
+.home-cta-section {
+  padding: 30px 0 85px;
+  background: #fff;
+}
+
+.home-cta-content {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 25px;
+  border-radius: 27px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.13), transparent 25%),
+    radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.12), transparent 25%),
+    linear-gradient(125deg, #1e40af, #2563eb 55%, #0284c7);
+}
+
+.home-cta-content::before,
+.home-cta-content::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.home-cta-content::before {
+  width: 350px;
+  height: 350px;
+  top: -200px;
+  left: -100px;
+}
+
+.home-cta-content::after {
+  width: 300px;
+  height: 300px;
+  right: -100px;
+  bottom: -190px;
+}
+
+.home-cta-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-cta-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 27px;
+}
+
+.home-cta-content .home-section-eyebrow {
+  color: #bfdbfe;
+}
+
+.home-cta-content h2 {
+  margin: 17px 0;
+  color: #fff;
+  font-size: clamp(29px, 4.5vw, 44px);
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.home-cta-content p {
+  max-width: 550px;
+  margin: 0 auto 27px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.home-cta-button {
+  min-height: 53px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 24px;
+  border-radius: 11px;
+  color: #1d4ed8;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.home-cta-button:hover {
+  color: #1d4ed8;
+  background: #dbeafe;
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+   9. TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 991px) {
+  .home-hero {
+    min-height: auto;
+    padding: 75px 0;
+  }
+
+  .home-hero-visual {
+    min-height: 470px;
+  }
+
+  .home-floating-booking {
+    right: 0;
+  }
+
+  .home-floating-care {
+    left: 0;
+  }
+
+  .home-section {
+    padding: 70px 0;
+  }
+
+  .home-category-card {
+    min-height: 350px;
+    padding: 30px;
+  }
+
+  .home-category-art {
+    right: 5px;
+    opacity: 0.8;
+  }
+}
+
+/* ==========================================
+   10. MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 767px) {
+  .home-hero {
+    padding: 65px 0 45px;
+  }
+
+  .home-hero h1 {
+    font-size: 53px;
+    letter-spacing: -2px;
+  }
+
+  .home-hero-description {
+    font-size: 14px;
+  }
+
+  .home-hero-visual {
+    min-height: 440px;
+    margin-top: 5px;
+  }
+
+  .home-visual-main {
+    width: 330px;
+    min-height: 390px;
+  }
+
+  .home-visual-center h2 {
+    font-size: 33px;
+  }
+
+  .home-floating-booking {
+    top: 25px;
+    right: -5px;
+  }
+
+  .home-floating-care {
+    bottom: 20px;
+    left: -5px;
+  }
+
+  .home-floating-card {
+    min-width: 195px;
+    padding: 12px;
+  }
+
+  .home-benefits-section {
+    padding: 25px 0;
+  }
+
+  .home-benefit-item {
+    padding: 8px 0;
+  }
+
+  .home-section {
+    padding: 60px 0;
+  }
+
+  .home-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+
+  .home-category-card {
+    min-height: 350px;
+  }
+
+  .home-category-art {
+    right: 0;
+    bottom: 0;
+    opacity: 0.45;
+  }
+
+  .home-category-content {
+    max-width: 300px;
+  }
+
+  .home-centered-heading {
+    margin-bottom: 35px;
+  }
+
+  .home-cta-section {
+    padding: 20px 0 60px;
+  }
+
+  .home-cta-content {
+    padding: 55px 20px;
+    border-radius: 20px;
+  }
+}
+
+/* ==========================================
+   11. SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+  .home-hero {
+    padding-top: 50px;
+  }
+
+  .home-eyebrow {
+    padding: 9px 12px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .home-hero h1 {
+    font-size: 44px;
+    letter-spacing: -1.7px;
+  }
+
+  .home-hero-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .home-hero-actions {
+    flex-direction: column;
+  }
+
+  .home-btn-primary,
+  .home-btn-outline {
+    width: 100%;
+  }
+
+  .home-hero-stats {
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .home-stat strong {
+    font-size: 21px;
+  }
+
+  .home-stat span {
+    font-size: 10px;
+  }
+
+  .home-stat-divider {
+    height: 33px;
+  }
+
+  .home-hero-visual {
+    min-height: 380px;
+  }
+
+  .home-visual-main {
+    width: min(290px, 88%);
+    min-height: 350px;
+    padding: 21px;
+    border-radius: 27px;
+  }
+
+  .home-visual-center h2 {
+    font-size: 29px;
+  }
+
+  .home-visual-icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 19px;
+    font-size: 25px;
+  }
+
+  .home-visual-bottom span {
+    font-size: 9px;
+  }
+
+  .home-floating-card {
+    min-width: 175px;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .home-floating-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .home-floating-card strong {
+    font-size: 10px;
+  }
+
+  .home-floating-card small {
+    font-size: 9px;
+  }
+
+  .home-floating-booking {
+    top: 10px;
+    right: -2px;
+  }
+
+  .home-floating-care {
+    bottom: 10px;
+    left: -2px;
+  }
+
+  .home-section-heading h2,
+  .home-centered-heading h2 {
+    font-size: 29px;
+  }
+
+  .home-section-heading p,
+  .home-centered-heading p {
+    font-size: 13px;
+  }
+
+  .home-category-card {
+    min-height: 340px;
+    padding: 26px 22px;
+    border-radius: 18px;
+  }
+
+  .home-category-content h3 {
+    font-size: 30px;
+  }
+
+  .home-category-content p {
+    max-width: 270px;
+    font-size: 12px;
+  }
+
+  .home-category-art {
+    width: 145px;
+    height: 145px;
+  }
+
+  .home-category-art > i {
+    font-size: 65px;
+  }
+
+  .home-service-card {
+    padding: 23px;
+  }
+
+  .home-cta-content h2 {
+    font-size: 29px;
+  }
+
+  .home-cta-content p {
+    font-size: 13px;
+  }
+
+  .home-cta-button {
+    width: 100%;
+  }
+}
+
+/* Accessibility: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .home-page *,
+  .home-page *::before,
+  .home-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
